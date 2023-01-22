@@ -94,6 +94,12 @@ To be able to run the examples, demos and exercises, you must have the following
 
 The following libraries are required to run the workshop
 
+on Macos you will need to install geos for cartopy to work. You can do so my running
+```
+brew install geos
+brew install proj
+```
+
 - geopandas==0.10.2
 - pandas==1.4.2
 - numpy==1.21.5
