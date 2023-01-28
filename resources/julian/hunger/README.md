@@ -1,0 +1,1 @@
+From: https://en.wikipedia.org/wiki/Global_Hunger_Index
