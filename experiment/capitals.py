@@ -102,6 +102,9 @@ ax = world.plot(
 #     color='white', edgecolor='black')
 
 # We can now plot our ``GeoDataFrame``.
-gdf.plot(ax=ax, color='red')
+gdf.plot(ax=ax, color='red', markersize=1)
+
+for x, y, label in zip(gdf.geometry.x, gdf.geometry.y, gdf.Capital):
+    ax.annotate(label, xy=(x, y), xytext=(3, 3), textcoords="offset points")
 
 plt.show()
