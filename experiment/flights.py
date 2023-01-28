@@ -58,7 +58,7 @@ airport_geodata = gpd.GeoDataFrame(airports,
                                    crs="EPSG:4326", 
                                    geometry=airport_geometry)
 
-# plit airports
+# plot airports
 # fig, ax = plt.subplots(facecolor='black', 
 #                        subplot_kw={'projection': ccrs.Robinson()}, 
 #                        figsize=(fig_w,5))
