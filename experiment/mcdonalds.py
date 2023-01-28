@@ -84,7 +84,7 @@ world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 ax = world.plot(
     color='white', edgecolor='black')
 
-# ax = world[world.continent == 'South America'].plot(
+# ax = world[world.continent == 'North America'].plot(
 #     color='white', edgecolor='black')
 
 # We can now plot our ``GeoDataFrame``.
