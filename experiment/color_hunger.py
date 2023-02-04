@@ -5,20 +5,14 @@ import pandas as pd
 import matplotlib.cm as cm
 import matplotlib as matplotlib
 
+# read in world map
 world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
-print(world)
+
 
 file = 'resources/julian/hunger/data.csv'
 df = pd.read_csv(file, delimiter="\t")
-
-# print(df)
 # filter to only africa
 df =  df[df['Continent'].str.contains('Africa', na=False)]
-# print(df)
-
-# from  matplotlib.colors import LinearSegmentedColormap
-# cmap=LinearSegmentedColormap.from_list('rg',["r", "w", "g"], N=256) 
-
 
 def color_map_color(value, cmap_name='RdYlGn', vmin=0, vmax=1):
     # norm = plt.Normalize(vmin, vmax)
@@ -79,10 +73,10 @@ afrika = world[world.continent == 'Africa']
 # exit()
 # paint all countries with single color
 for f in afrika.name:
-    print("country: ", f)
+    # print("country: ", f)
     # print(type(f))
     o = f.split(": ")[-1]
-    print("c:[", o, "]")
+    # print("c:[", o, "]")
     plotCountryPatch(ax2, o, "gray")
 
 
@@ -111,7 +105,7 @@ for ind in df.index:
     country = df['Country'][ind]
     country = country.split("(")[0]
     plotCountryPatch(ax2, country, col)
-    print("{}: val: {}".format(country, df['2022'][ind]))
+    # print("{}: val: {}".format(country, df['2022'][ind]))
 
 # then plot some countries on top
 # 

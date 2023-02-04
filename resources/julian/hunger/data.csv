@@ -72,7 +72,7 @@ Rank 1,2	Country	Continent	Period	Average period decrease	2000	2007	2014	2022	Ac
 71	 Myanmar	Asia	39.9	29.4	17.9	15.6	8.10	26.09
 71	 Senegal	Africa	34.2	22.8	17.6	15.6	6.20	22.50
 73	 Eswatini	Africa	24.7	22.9	18.4	16.3	2.80	12.78
-74	 Ivory Coast	Africa	33.4	35.8 Negative increase	22.7	16.8	5.53	18.47
+74	 Cote d'Ivore	Africa	33.4	35.8 Negative increase	22.7	16.8	5.53	18.47
 75	 Cambodia	Asia	41.1	26.1	20.1	17.1	8.00	24.80
 76	 Gabon	Africa	20.9	20.3	16.5	17.2 Negative increase	1.23	5.78
 77	 Indonesia	Asia	26.1	29.1 Negative increase	22.2	17.9	2.73	10.53
@@ -103,7 +103,7 @@ Rank 1,2	Country	Continent	Period	Average period decrease	2000	2007	2014	2022	Ac
 102	 Rwanda	Africa	49.9	35.9	29.5	27.2	7.57	17.89
 103	 Nigeria (more info)	Africa	40.4	32.1	28.4	27.3	4.37	11.98
 104	 Ethiopia (more info) (famine)	Africa	53.6	42.6	27.4	27.6 Negative increase	8.67	18.49
-105	 Congo		34.7	33.7	25.3	28.1 Negative increase	2.20	5.58
+105	 Dem. Rep. Congo		34.7	33.7	25.3	28.1 Negative increase	2.20	5.58
 106	 Sudan (famine)	Africa	—	—	29.3	28.8	0.00	0.00
 107	 India (more info) (famine)	Asia	38.8	36.3	28.2	29.1 Negative increase	3.23	8.52
 108	 Zambia	Africa	53.3	46.0	35.2	29.3	8.00	17.98
@@ -126,5 +126,5 @@ Rank 1,2	Country	Continent	Period	Average period decrease	2000	2007	2014	2022	Ac
 121	 Yemen (famine)	Asia	41.3	38.4	41.7 Negative increase	45.1 Negative increase	−1.27	−3.24
 *	 Burundi	Africa	—	—	—	35-49.9*	0.00	0.00
 *	 Somalia (famine)	Africa	—	—	—	35-49.9*	0.00	0.00
-*	 South Sudan	Africa	—	—	—	35-49.9*	0.00	0.00
+*	 S. Sudan	Africa	—	—	—	35-49.9*	0.00	0.00
 *	 Syria (more info) (famine)	Asia	—	—	—	35-49.9*	0.00	0.00
