@@ -6,7 +6,7 @@ import matplotlib.cm as cm
 import matplotlib as matplotlib
 
 world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
-
+print(world)
 
 file = 'resources/julian/hunger/data.csv'
 df = pd.read_csv(file, delimiter="\t")
@@ -63,7 +63,20 @@ ax2 = world[world.continent == 'Africa'].plot(figsize=(8,8), edgecolor=u'gray', 
 
 # reduce contries to africa
 afrika = world[world.continent == 'Africa']
+# afrika['coords'] = afrika['geometry'].apply(lambda x: x.representative_point().coords[:])
 
+# df.apply(lambda x: ax2.annotate(text=afrika['name'], xy=afrika.geometry.centroid.coords[0], ha='center'), axis=1)
+
+# afrika.apply(lambda x: ax2.annotate(s=x.name, xy=x.geometry.centroid.coords[0], ha='center', fontsize=14),axis=1)
+# # afrika.boundary.plot(ax=ax2, color='Black', linewidth=.4)
+# # afrika.plot(ax=ax2, cmap='Pastel2', figsize=(12, 12))
+# ax2.text(-0.05, 0.5, 'https://jcutrer.com', transform=ax2.transAxes,
+#         fontsize=20, color='gray', alpha=0.5,
+#         ha='center', va='center', rotation='90')
+# print(afrika)
+# print(type(afrika))
+
+# exit()
 # paint all countries with single color
 for f in afrika.name:
     print("country: ", f)
@@ -71,11 +84,25 @@ for f in afrika.name:
     o = f.split(": ")[-1]
     print("c:[", o, "]")
     plotCountryPatch(ax2, o, "gray")
+
+
+# df.apply(lambda x: ax2.annotate(text=x['name'], xy=x.geometry.centroid.coords[0], ha='center'), axis=1)
+    # ax2.text(f.lon - 1.5, f.lat, f.country, fontsize=5)
     # break
 # exit()
 
 # print("max val: ", df['2022'].min())
 # todo: make max work
+
+# annotate
+afrika['coords'] = afrika['geometry'].apply(lambda x: x.representative_point().coords[:])
+
+afrika['coords'] = [coords[0] for coords in afrika['coords']]
+# fig, ax = plt.subplots(figsize = (10,10))
+# gdf_swk.plot(ax=ax, color=’yellow’, edgecolor=’black’)
+for idx, row in afrika.iterrows():
+   ax2.annotate(text=row['name'], xy=row['coords'], horizontalalignment='center', color='blue')
+
 
 # colorcode countries
 maxval = 20
